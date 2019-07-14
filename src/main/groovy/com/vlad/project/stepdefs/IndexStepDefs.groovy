@@ -22,5 +22,8 @@ When(~/^I click$/) { ->
 Then(~/^I see the manual page$/) { ->
     browser.drive() {
         at TheBookOfGebPage
+        sleep(3000)
+        print "---------------------------"
+        println author.text()
     }
 }
